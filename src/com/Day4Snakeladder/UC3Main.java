@@ -1,6 +1,6 @@
 package com.Day4Snakeladder;
 import java.util.*;
-public class Main1 {
+public class UC3Main {
     public static void main(String[] args) {
         System.out.println("Lets Play Snake and Ladders !!!");
         Scanner in = new Scanner(System.in);
@@ -23,22 +23,22 @@ public class Main1 {
         System.out.println("Enter no of ladders");
         int no_of_ladders=in.nextInt();
         in.nextLine();
-        HashMap<Integer, Ladder> laddersMap = new HashMap<Integer, Ladder>();
+        HashMap<Integer, UC4Ladder> laddersMap = new HashMap<Integer, UC4Ladder>();
         while(no_of_ladders>0){
             String[] str= in.nextLine().split(" ");
             int val1=Integer.parseInt(str[0]);
             int val2=Integer.parseInt(str[1]);
-            Ladder ladder= new Ladder(val1,val2);
+            UC4Ladder ladder= new UC4Ladder(val1,val2);
             laddersMap.put(val1,ladder);
             no_of_ladders--;
         }
         System.out.println("Enter no of players");
         int no_of_players=in.nextInt();
         in.nextLine();
-        Queue<Player> players= new LinkedList<Player>();
+        Queue<UC1Player> players= new LinkedList<UC1Player>();
         while(no_of_players>0){
             String str= in.nextLine();
-            Player player= new Player(str);
+            UC1Player player= new UC1Player(str);
             players.add(player);
             no_of_players--;
         }

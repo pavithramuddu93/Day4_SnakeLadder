@@ -1,9 +1,9 @@
 package com.Day4Snakeladder;
 
-public class Player {
+public class UC1Player {
     private String player_name;
     private int position;
-    Player(String player_name){
+    UC1Player(String player_name){
         this.player_name=player_name;
         this.position=0;
     }

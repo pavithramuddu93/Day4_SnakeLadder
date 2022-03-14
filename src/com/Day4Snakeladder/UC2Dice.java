@@ -1,11 +1,11 @@
 package com.Day4Snakeladder;
 
-public class Dice {
+public class UC2Dice {
     private int  size;
-    Dice(int size){
+    UC2Dice(int size){
         this.size=size;
     }
-    Dice(){
+    UC2Dice(){
         this(6);
     }
     public int getDiceSize(){

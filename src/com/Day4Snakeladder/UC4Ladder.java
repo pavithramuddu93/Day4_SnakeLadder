@@ -1,9 +1,9 @@
 package com.Day4Snakeladder;
 
-public class Ladder {
+public class UC4Ladder {
         private int start;
         private int end;
-        Ladder(int start,int end){
+        UC4Ladder(int start, int end){
             this.start=start;
             this.end=end;
         }
